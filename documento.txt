@@ -11,7 +11,7 @@ en la carpeta del proyecto se hace:
     git branch --all
     git checkout  feature
     git add .
-    git commit
+    git commit -m ""
     > python  -m venv .venv
     .venv\Scripts\activate
     git push origin feature
