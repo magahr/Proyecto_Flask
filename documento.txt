@@ -1,0 +1,28 @@
+ de esta manera lo activo el profe de oplek
+ source venv/Scripts/activate
+ pero yo lo hice desde comand prompt de la siguiente manera:
+en la carpeta del proyecto se hace:
+0.- crear carpeta del proyecto y el ambiente virtual
+    mkdir myproject
+    > cd myproject
+    hacer git init
+    git remote add origin https://github.com/magahr/Proyecto_Flask.git
+    git pull origin
+    git branch --all
+    git checkout  feature
+    git add .
+    git commit
+    > python  -m venv .venv
+    .venv\Scripts\activate
+    git push origin feature
+
+1.- instalar flsk con pip
+     pip install Flask
+     pip list
+    voy por el minuto 058 del
+
+2.- crear el requeriment.txt
+    pip freeze > requeriments.txt
+
+3.- ejecutar flask
+    flask --app hello run
