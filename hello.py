@@ -33,7 +33,7 @@ def social_oplesk():
 def get_students():
     return jsonify(students)
 
-@app.route("/create-students2", methods=['POST'])
+@app.route("/createstudents2", methods=['POST'])
 def create_students2():
     data = request.json
     students2.append(data)
@@ -42,8 +42,11 @@ def create_students2():
    
 @app.route("/delete-students", methods=['DELETE'])
 def delete_all_students():
+    print( { 'message': 'Valor de Students antes de borrarlo a todos', 'los estudiantes son : ': students})
     students.clear()
     return jsonify( { 'message': 'Estudiantes borrado correctamente', 'Todos los estudiantes son : ': students})
+
+# agregar aqui el minulo 32 del ultimo video
 
 @app.route("/students/<int:student_id>", methods=['PATCH'])
 def get_students_by_id(student_id):
