@@ -26,3 +26,7 @@ en la carpeta del proyecto se hace:
 
 3.- ejecutar flask - el
     flask --app hello run
+
+4.- Ejecutar con Postma
+    https://web.postman.co
+ 
